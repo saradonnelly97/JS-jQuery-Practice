@@ -7,7 +7,21 @@
     <script>
 
         //Check the readme file in this folder for instructions.
-
+        function createDiv() {
+  $(document).ready(function () {
+    let test = {
+      id: "div",
+      class: "divclass",
+      css: {
+        "color": "Green"
+      }
+    };
+    let $div = $("<div>", test);
+    $div.html("New div tag created");
+    $("body").append($div);
+  });
+        }
+        
         //Your Code Goes Here
 
     </script>
